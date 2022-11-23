@@ -138,7 +138,7 @@ int main(int argc, char *argv[])
     printf("\n ");
 
     fp = fopen("result.txt", "a");
-    fprintf(fp, "%f \n%f \n%f \n", resultO, resultR, resultF);
+    fprintf(fp, "OTHER \n%f\n%d \nRR \n%f\n%d \nFIFO \n%f\n%d\n", resultO, priorityO, resultR, priorityR, resultF, priorityF);
     fclose(fp);
 
     return 0;
